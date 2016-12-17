@@ -14,6 +14,6 @@
  - phía dưới dung ckeditor để cho nhập content
  - khi bấm save sẽ lưu trên firebase
  
- ### Chi tiết
+### Chi tiết
  - json schema ban đầu https://gist.github.com/baotnq/025d456d5d0754109d3753f613444bad
  - Sinh form nhập liệu, kế thừa json-editor  http://jeremydorn.com/json-editor/
