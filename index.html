@@ -16,6 +16,10 @@
     <div class="message">Aurelia Navigation Skeleton</div>
     <i class="fa fa-spinner fa-spin"></i>
   </div>
+  <script>
+    require('electron-connect').client.create()
+  </script>
+  <script src="index.js"></script>
   <!-- The bluebird version is locked at 4.6.3 in the package.json file to keep this from breaking -->
   <!-- We include bluebird to bypass Edge's very slow Native Promise implementation. The Edge team -->
   <!-- has fixed the issues with their implementation with these fixes being distributed with the  -->
@@ -29,7 +33,7 @@
   </script>
   <script src="jspm_packages/system.js"></script>
   <script src="config.js"></script>
-  <script src="jspm_packages/npm/bluebird@3.4.1/js/browser/bluebird.min.js"></script>
+  <!--<script src="jspm_packages/npm/bluebird@3.4.1/js/browser/bluebird.min.js"></script>-->
   <script>
     System.import('aurelia-bootstrapper');
 
