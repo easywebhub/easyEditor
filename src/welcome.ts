@@ -1,5 +1,5 @@
 // import {computedFrom} from 'aurelia-framework';
-
+import  'ckeditor';   
 export class Welcome {
   public heading = 'Welcome to the Aurelia Navigation App!';
   public firstName = 'John';
@@ -24,6 +24,10 @@ export class Welcome {
     if (this.fullName !== this.previousValue) {
       return confirm('Are you sure you want to leave?');
     }
+  }
+
+  public attached(){
+     window['CKEDITOR']['replace']( 'editor1' );
   }
 }
 

@@ -86,6 +86,8 @@
     "devDependencies": {}
   },
   "dependencies": {
-    "jquery": "^3.1.1"
+    "ckeditor": "^4.6.1",
+    "jquery": "^3.1.1",
+    "semantic-ui-css": "^2.2.4"
   }
 }

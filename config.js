@@ -4,7 +4,9 @@ System.config({
   paths: {
     "*": "dist/*",
     "github:*": "jspm_packages/github/*",
-    "npm:*": "jspm_packages/npm/*"
+    "npm:*": "jspm_packages/npm/*",
+    "semantic-ui": "node_modules/semantic-ui-css/semantic.min.js",
+    "ckeditor": "vendor/ckeditor/ckeditor.js"
   },
   meta: {
     "bootstrap": {
