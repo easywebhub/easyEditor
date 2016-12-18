@@ -23,9 +23,9 @@ app.on('ready', () => {
     // jQuery to work properly. If you need Node integration, please
     // see the Electron FAQ for how to enable this:
     // http://electron.atom.io/docs/faq/
-    webPreferences: {
-      nodeIntegration: false
-    }
+    // webPreferences: {
+    //   nodeIntegration: false
+    // }
   });
 
   mainWindow.loadURL(`file://${__dirname}/index.html`);
