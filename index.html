@@ -13,11 +13,12 @@
 
 <body aurelia-app="main">
   <div class="splash">
-    <div class="message">Aurelia Navigation Skeleton</div>
+    <div class="message">easy editor</div>
     <i class="fa fa-spinner fa-spin"></i>
   </div>
   <script>
     require('electron-connect').client.create();
+
   </script>
   <!-- The bluebird version is locked at 4.6.3 in the package.json file to keep this from breaking -->
   <!-- We include bluebird to bypass Edge's very slow Native Promise implementation. The Edge team -->
@@ -25,6 +26,19 @@
   <!-- Windows 10 Anniversary Update on 2 August 2016. Once that update has pushed out, you may    -->
   <!-- consider removing bluebird from your project and simply using native promises if you do     -->
   <!-- not need to support Internet Explorer.                                                      -->
+  <script src="https://www.gstatic.com/firebasejs/3.6.4/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyBa6fkK-ECMH75rWwIxrWRUjeB9VtM5m54",
+      authDomain: "tungpt-app1.firebaseapp.com",
+      databaseURL: "https://tungpt-app1.firebaseio.com",
+      storageBucket: "tungpt-app1.appspot.com",
+      messagingSenderId: "423706317172"
+    };
+    firebase.initializeApp(config);
+
+  </script>
   <script>
     window.$ = window.jQuery = require('jquery');
     var CKEDITOR_BASEPATH = 'vendor/ckeditor/';
