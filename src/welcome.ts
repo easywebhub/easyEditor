@@ -1,5 +1,5 @@
 // import {computedFrom} from 'aurelia-framework';
-import  'ckeditor';   
+import 'ckeditor';   
 export class Welcome {
   public heading = 'Welcome to the Aurelia Navigation App!';
   public firstName = 'John';
@@ -27,7 +27,7 @@ export class Welcome {
   }
 
   public attached(){
-     window['CKEDITOR']['replace']( 'editor1' );
+    //  window['CKEDITOR']['replace']( 'editor1' );
   }
 }
 
