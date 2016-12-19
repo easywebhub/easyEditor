@@ -12,19 +12,9 @@ export class App {
   constructor() {
     firebase.auth().onAuthStateChanged(function (user) {
       if (user) {
+        alert(`current user : ${user.email}`);
         // User is signed in.
-        var user = firebase.auth().currentUser;
 
-        if (user != null) {
-          user.providerData.forEach(function (profile) {
-            alert(`current user : ${profile.email}`);
-            console.log("Sign-in provider: " + profile.providerId);
-            console.log("  Provider-specific UID: " + profile.uid);
-            console.log("  Name: " + profile.displayName);
-            console.log("  Email: " + profile.email);
-            console.log("  Photo URL: " + profile.photoURL);
-          });
-        }
       } else {
         // No user is signed in.
       }
@@ -43,7 +33,7 @@ export class App {
       route: 'sign-in',
       name: 'sign-in',
       moduleId: './view-models/sign-in',
-      nav: true,
+      nav: false,
       title: 'Sign-in'
     }, {
       route: 'welcome',

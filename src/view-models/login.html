@@ -7,22 +7,21 @@
         Log-in to your account
       </div>
     </h2>
-    <form class="ui large form">
+    <form class="ui large form" submit.delegate="createUser(user)">
       <div class="ui stacked segment">
         <div class="field">
           <div class="ui left icon input">
             <i class="user icon"></i>
-            <input type="text" name="email" placeholder="E-mail address">
+            <input type="email" name="email" placeholder="E-mail address" value.bind="user.email" required>
           </div>
         </div>
         <div class="field">
           <div class="ui left icon input">
             <i class="lock icon"></i>
-            <input type="password" name="password" placeholder="Password">
+            <input type="password" name="password" placeholder="Password" value.bind="user.password" required>
           </div>
         </div>
-        <div class="ui fluid large teal submit button" click.delegate="createUser()">Login</div>
-        <div class="ui fluid large teal submit button" click.delegate="showIfo()">show info</div>
+        <button class="ui fluid large teal submit button" type="submit" >Login</button>
         
       </div>
 
